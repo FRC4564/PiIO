@@ -8,4 +8,4 @@ allows up to 4 relays to be controlled.  Additional 6 inputs are available for m
 
 See the PDF file for the Pi Plate build. 
 
-![](https://raw.githubusercontent.com/FRC4564/InfoCenter/master/protoboard.JPG)
+![](https://raw.githubusercontent.com/FRC4564/PiIO/master/protoboard.JPG)
