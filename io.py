@@ -117,36 +117,4 @@ class Switch():
         else:
             return False
 
-
-"""
-import time
-sp1=Spike(1)   
-sp2=Spike(2)
-sp3=Spike(3)
-sp4=Spike(4)
-sw6=Switch(6)
-
-try:
-    while sw6.open():
-        sp1.fwd()
-        print sw6.open()
-        time.sleep(1)
-        sp1.rev()
-        print sw6.open()
-        time.sleep(1)
-        sp1.stop()
-        print sw6.open()
-        time.sleep(1)
-
-except:
-    raise
-
-finally:
-    sp1.off()
-    sp2.off()
-    sp3.off()
-    sp4.off()
-    IO.cleanup()
-"""
-    
     
