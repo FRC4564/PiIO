@@ -3,12 +3,12 @@ Methods to work specifcally with the custom made board that attaches atop the
 RPi to provide 4 Spike Relays outputs and 6 input switches.  
 
 Example usage  (GPIO requires you run code with 'sudo python'):
-    import io
+    import PiIO
 
     try:
-        winch = io.Spike(1)
-        upperLimit = io.Switch(1)
-        lowerLimit = io.Switch(2)
+        winch = PiIO.Spike(1)
+        upperLimit = PiIO.Switch(1)
+        lowerLimit = PiIO.Switch(2)
         
         # Run winch to upper limit
         while upperLimit.Open():
@@ -25,7 +25,7 @@ Example usage  (GPIO requires you run code with 'sudo python'):
 
     finally:
     # Release IO lines
-    io.close()
+    PiIO.close()
 
 """
 

@@ -1,10 +1,10 @@
-import io
+import PiIO
 import time
 
 try:
-    winch = io.Spike(1)
-    upperLimit = io.Switch(1)
-    lowerLimit = io.Switch(2)
+    winch = PiIO.Spike(1)
+    upperLimit = PiIO.Switch(1)
+    lowerLimit = PiIO.Switch(2)
 
     winch.stop()
     time.sleep(1)
@@ -25,9 +25,9 @@ try:
     winch.stop()
     
 except:
-    io.close()
+    PiIO.close()
     raise
 
 finally:
 # Release IO lines
-    io.close()
+    PiIO.close()

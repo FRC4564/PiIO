@@ -1,17 +1,17 @@
-import io
+import PiIO
 import time
 
 try:
-    sp1 = io.Spike(1)
-    sp2 = io.Spike(2)
-    sp3 = io.Spike(3)
-    sp4 = io.Spike(4)
-    sw1 = io.Switch(1)
-    sw2 = io.Switch(2)
-    sw3 = io.Switch(3)
-    sw4 = io.Switch(4)
-    sw5 = io.Switch(5)
-    sw6 = io.Switch(6)
+    sp1 = PiIO.Spike(1)
+    sp2 = PiIO.Spike(2)
+    sp3 = PiIO.Spike(3)
+    sp4 = PiIO.Spike(4)
+    sw1 = PiIO.Switch(1)
+    sw2 = PiIO.Switch(2)
+    sw3 = PiIO.Switch(3)
+    sw4 = PiIO.Switch(4)
+    sw5 = PiIO.Switch(5)
+    sw6 = PiIO.Switch(6)
 
     cycle = 0  #0=stop, 1=fwd, 2=rev
     
@@ -41,9 +41,9 @@ try:
     
 
 except:
-    io.close()
+    PiIO.close()
     raise
 
 finally:
 # Release IO lines
-    io.close()
+    PiIO.close()
