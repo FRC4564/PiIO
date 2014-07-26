@@ -9,7 +9,7 @@ This custom Pi expansion plate and associated Python module allows up to 4 Spike
 
 The nearly completed plate looks this (it is just missing switch headers 5 and 6 in this photo).
 
-![](https://raw.githubusercontent.com/FRC4564/PiIO/master/IOplate.JPG)
+![](https://raw.githubusercontent.com/FRC4564/PiIO/master/IOplate.jpg)
 
 
 The plate fits Pi models B and B+. I used AdaFruits Raspberry Pi permaboard and their tall 26 pin header to connect into the GPIO lines and raise the board just above the ethernet USB ports. Need a bit of electrical insulation on top of the USB ports so as not to short out the board.
